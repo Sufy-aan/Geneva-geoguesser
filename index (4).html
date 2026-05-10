@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geneva GeoGuesser</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- LANGUAGE TOGGLE -->
+<div class="lang-toggle">
+  <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+  <button class="lang-btn" data-lang="fr" onclick="setLang('fr')">FR</button>
+</div>
+
+<!-- ========== START SCREEN ========== -->
+<div id="start-screen" class="screen active">
+  <div class="logo-mark">Geneva<span>.</span><br/>GeoGuesser</div>
+  <div class="tagline" id="tagline">Know your neighbourhood?</div>
+
+  <div class="zone-select-wrap">
+    <div class="zone-select-label" id="zone-select-label">Choose a zone</div>
+    <select class="zone-select" id="zone-select" onchange="selectZone(this.value)">
+      <option value="geneva">All Geneva</option>
+      <option value="charmilles">Les Charmilles</option>
+      <option value="saint-jean">Saint-Jean</option>
+      <option value="plainpalais">Plainpalais</option>
+      <option value="carouge">Carouge</option>
+      <option value="eaux-vives">Eaux-Vives</option>
+      <option value="paquis">Les Pâquis</option>
+      <option value="servette">Servette</option>
+    </select>
+  </div>
+
+  <div class="rounds-label" id="rounds-label">5 rounds · up to 1000 pts each</div>
+
+  <label class="easy-toggle">
+    <input type="checkbox" id="easy-mode-checkbox" />
+    <span id="easy-mode-label">Easy mode (show hint circle)</span>
+  </label>
+
+  <div class="start-row">
+    <button class="start-btn" id="start-btn" onclick="startGame()">Start →</button>
+    <button class="tutorial-link" id="tutorial-link" onclick="window.location.href='tutorial.html'">How to play</button>
+  </div>
+</div>
+
+<!-- ========== GAME SCREEN ========== -->
+<div id="game-screen" class="screen">
+  <div id="sv-container">
+    <div class="loader-overlay" id="sv-loader">
+      <div class="loader-dot"></div>
+      <span id="sv-loader-text">Loading Street View…</span>
+    </div>
+  </div>
+
+  <div class="hud">
+    <span class="hud-score"><span id="hud-score-label">Score:</span> <span id="hud-score-val">0</span></span>
+    <span class="hud-sep">|</span>
+    <span class="hud-round"><span id="hud-round-label">Round</span> <span id="hud-round-val">1</span>/5</span>
+    <span class="hud-sep">|</span>
+    <span class="hud-neighbourhood" id="hud-neighbourhood">—</span>
+  </div>
+
+  <div id="map-panel">
+    <div id="map-container"></div>
+    <div class="map-footer">
+      <button class="expand-btn" onclick="toggleMap()">⤢</button>
+      <button class="guess-btn" id="guess-btn" onclick="submitGuess()">Place your guess</button>
+    </div>
+  </div>
+</div>
+
+<!-- ========== RESULT SCREEN ========== -->
+<div id="result-screen" class="screen">
+  <div class="result-map-wrap">
+    <div id="result-map" style="width:100%;height:100%"></div>
+  </div>
+  <div class="result-score-box">
+    <div class="result-pts" id="result-pts">0</div>
+    <div class="result-dist" id="result-dist">— m away</div>
+  </div>
+  <div class="result-actions">
+    <button class="next-btn" id="next-btn" onclick="nextRound()">Next round →</button>
+  </div>
+</div>
+
+<!-- ========== FINAL SCREEN ========== -->
+<div id="final-screen" class="screen">
+  <div class="final-title" id="final-title">Final score</div>
+  <div class="final-pts" id="final-pts">0</div>
+  <div class="final-max" id="final-max">out of 5000</div>
+  <div class="round-summary" id="round-summary"></div>
+  <button class="play-again-btn" id="play-again-btn" onclick="resetGame()">Play again →</button>
+</div>
+
+<script src="zones.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
