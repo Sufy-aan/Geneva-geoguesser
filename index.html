@@ -255,7 +255,6 @@ const ZONES = {
     name: { en: 'Les Charmilles', fr: 'Les Charmilles' },
    center: { lat: 46.2096, lng: 6.1287 }, 
 zoom: 15,
-
 boundary: [
   { lat: 46.2149, lng: 6.1198 },
   { lat: 46.2147, lng: 6.1238 },
@@ -285,13 +284,21 @@ boundary: [
   'saint-jean': {
     // Right bank, west of Charmilles, along Rhone. Between Route de Saint-Jean and Rhone.
     name: { en: 'Saint-Jean', fr: 'Saint-Jean' },
-    center: { lat: 46.2125, lng: 6.1148 }, zoom: 15,
-    boundary: [
-      { lat: 46.2168, lng: 6.1158 }, { lat: 46.2155, lng: 6.1195 },
-      { lat: 46.2152, lng: 6.1258 }, { lat: 46.2118, lng: 6.1268 },
-      { lat: 46.2085, lng: 6.1228 }, { lat: 46.2072, lng: 6.1168 },
-      { lat: 46.2082, lng: 6.1105 }, { lat: 46.2118, lng: 6.1062 },
-      { lat: 46.2155, lng: 6.1085 }, { lat: 46.2168, lng: 6.1158 },
+     center: { lat: 46.2068, lng: 6.1260 },
+  zoom: 15,
+  boundary: [
+    { lat: 46.2122, lng: 6.1187 },
+    { lat: 46.2130, lng: 6.1235 },
+    { lat: 46.2125, lng: 6.1287 },
+    { lat: 46.2105, lng: 6.1321 },
+    { lat: 46.2069, lng: 6.1335 },
+    { lat: 46.2030, lng: 6.1323 },
+    { lat: 46.2008, lng: 6.1289 },
+    { lat: 46.2005, lng: 6.1241 },
+    { lat: 46.2020, lng: 6.1202 },
+    { lat: 46.2050, lng: 6.1185 },
+    { lat: 46.2090, lng: 6.1180 },
+    { lat: 46.2122, lng: 6.1187 }
     ],
     points: [
       { lat: 46.2148, lng: 6.1115 }, { lat: 46.2135, lng: 6.1148 },
@@ -305,13 +312,21 @@ boundary: [
   plainpalais: {
     // Left bank, between Rhone and Arve. Diamond-shaped plain.
     name: { en: 'Plainpalais', fr: 'Plainpalais' },
-    center: { lat: 46.1988, lng: 6.1398 }, zoom: 15,
-    boundary: [
-      { lat: 46.2035, lng: 6.1318 }, { lat: 46.2042, lng: 6.1428 },
-      { lat: 46.2015, lng: 6.1505 }, { lat: 46.1978, lng: 6.1522 },
-      { lat: 46.1948, lng: 6.1478 }, { lat: 46.1938, lng: 6.1365 },
-      { lat: 46.1958, lng: 6.1298 }, { lat: 46.2005, lng: 6.1272 },
-      { lat: 46.2035, lng: 6.1318 },
+   center: { lat: 46.1985, lng: 6.1420 },
+  zoom: 15,
+  boundary: [
+    { lat: 46.2045, lng: 6.1335 },
+    { lat: 46.2060, lng: 6.1400 },
+    { lat: 46.2058, lng: 6.1485 },
+    { lat: 46.2035, lng: 6.1542 },
+    { lat: 46.1998, lng: 6.1565 },
+    { lat: 46.1955, lng: 6.1560 },
+    { lat: 46.1915, lng: 6.1520 },
+    { lat: 46.1900, lng: 6.1455 },
+    { lat: 46.1908, lng: 6.1380 },
+    { lat: 46.1935, lng: 6.1340 },
+    { lat: 46.1985, lng: 6.1325 },
+    { lat: 46.2045, lng: 6.1335 }
     ],
     points: [
       { lat: 46.2005, lng: 6.1388 }, { lat: 46.2018, lng: 6.1418 },
@@ -325,13 +340,21 @@ boundary: [
   carouge: {
     // South of Geneva, separate commune with Italian feel
     name: { en: 'Carouge', fr: 'Carouge' },
-    center: { lat: 46.1858, lng: 6.1458 }, zoom: 15,
-    boundary: [
-      { lat: 46.1938, lng: 6.1365 }, { lat: 46.1948, lng: 6.1478 },
-      { lat: 46.1928, lng: 6.1528 }, { lat: 46.1888, lng: 6.1552 },
-      { lat: 46.1835, lng: 6.1528 }, { lat: 46.1812, lng: 6.1448 },
-      { lat: 46.1835, lng: 6.1358 }, { lat: 46.1882, lng: 6.1325 },
-      { lat: 46.1938, lng: 6.1365 },
+      center: { lat: 46.1816, lng: 6.1396 },
+  zoom: 15,
+  boundary: [
+    { lat: 46.1895, lng: 6.1295 },
+    { lat: 46.1920, lng: 6.1360 },
+    { lat: 46.1918, lng: 6.1455 },
+    { lat: 46.1880, lng: 6.1515 },
+    { lat: 46.1820, lng: 6.1540 },
+    { lat: 46.1760, lng: 6.1525 },
+    { lat: 46.1718, lng: 6.1470 },
+    { lat: 46.1705, lng: 6.1395 },
+    { lat: 46.1720, lng: 6.1325 },
+    { lat: 46.1765, lng: 6.1280 },
+    { lat: 46.1830, lng: 6.1270 },
+    { lat: 46.1895, lng: 6.1295 }
     ],
     points: [
       { lat: 46.1895, lng: 6.1465 }, { lat: 46.1878, lng: 6.1438 },
@@ -345,13 +368,21 @@ boundary: [
   'eaux-vives': {
     // Left bank, east side along lake shore
     name: { en: 'Eaux-Vives', fr: 'Eaux-Vives' },
-    center: { lat: 46.2038, lng: 6.1648 }, zoom: 15,
-    boundary: [
-      { lat: 46.2085, lng: 6.1548 }, { lat: 46.2092, lng: 6.1638 },
-      { lat: 46.2105, lng: 6.1725 }, { lat: 46.2062, lng: 6.1758 },
-      { lat: 46.2005, lng: 6.1728 }, { lat: 46.1968, lng: 6.1665 },
-      { lat: 46.1958, lng: 6.1575 }, { lat: 46.1988, lng: 6.1528 },
-      { lat: 46.2042, lng: 6.1522 }, { lat: 46.2085, lng: 6.1548 },
+   center: { lat: 46.2023, lng: 6.1548 },
+  zoom: 15,
+  boundary: [
+    { lat: 46.2090, lng: 6.1450 },
+    { lat: 46.2115, lng: 6.1520 },
+    { lat: 46.2112, lng: 6.1610 },
+    { lat: 46.2080, lng: 6.1670 },
+    { lat: 46.2030, lng: 6.1695 },
+    { lat: 46.1975, lng: 6.1680 },
+    { lat: 46.1935, lng: 6.1630 },
+    { lat: 46.1920, lng: 6.1555 },
+    { lat: 46.1935, lng: 6.1485 },
+    { lat: 46.1980, lng: 6.1445 },
+    { lat: 46.2040, lng: 6.1438 },
+    { lat: 46.2090, lng: 6.1450 }
     ],
     points: [
       { lat: 46.2055, lng: 6.1618 }, { lat: 46.2072, lng: 6.1588 },
@@ -365,13 +396,22 @@ boundary: [
   paquis: {
     // Right bank, along lake shore north of city centre
     name: { en: 'Les Paquis', fr: 'Les Paquis' },
-    center: { lat: 46.2112, lng: 6.1508 }, zoom: 15,
-    boundary: [
-      { lat: 46.2158, lng: 6.1408 }, { lat: 46.2165, lng: 6.1498 },
-      { lat: 46.2168, lng: 6.1578 }, { lat: 46.2138, lng: 6.1618 },
-      { lat: 46.2098, lng: 6.1592 }, { lat: 46.2082, lng: 6.1498 },
-      { lat: 46.2088, lng: 6.1408 }, { lat: 46.2118, lng: 6.1382 },
-      { lat: 46.2158, lng: 6.1408 },
+  center: { lat: 46.2118, lng: 6.1512 },
+  zoom: 15,
+
+  boundary: [
+    { lat: 46.2175, lng: 6.1425 },
+    { lat: 46.2190, lng: 6.1480 },
+    { lat: 46.2188, lng: 6.1555 },
+    { lat: 46.2160, lng: 6.1605 },
+    { lat: 46.2120, lng: 6.1625 },
+    { lat: 46.2078, lng: 6.1610 },
+    { lat: 46.2055, lng: 6.1565 },
+    { lat: 46.2050, lng: 6.1495 },
+    { lat: 46.2065, lng: 6.1445 },
+    { lat: 46.2100, lng: 6.1418 },
+    { lat: 46.2145, lng: 6.1412 },
+    { lat: 46.2175, lng: 6.1425 }
     ],
     points: [
       { lat: 46.2128, lng: 6.1468 }, { lat: 46.2145, lng: 6.1438 },
@@ -385,13 +425,22 @@ boundary: [
   servette: {
     // Right bank, north of Grottes/Paquis, residential
     name: { en: 'Servette', fr: 'Servette' },
-    center: { lat: 46.2242, lng: 6.1378 }, zoom: 15,
-    boundary: [
-      { lat: 46.2298, lng: 6.1268 }, { lat: 46.2305, lng: 6.1418 },
-      { lat: 46.2278, lng: 6.1468 }, { lat: 46.2232, lng: 6.1468 },
-      { lat: 46.2198, lng: 6.1428 }, { lat: 46.2188, lng: 6.1315 },
-      { lat: 46.2212, lng: 6.1258 }, { lat: 46.2258, lng: 6.1238 },
-      { lat: 46.2298, lng: 6.1268 },
+   center: { lat: 46.2142, lng: 6.1295 },
+  zoom: 15,
+
+  boundary: [
+    { lat: 46.2210, lng: 6.1205 },
+    { lat: 46.2230, lng: 6.1265 },
+    { lat: 46.2225, lng: 6.1345 },
+    { lat: 46.2190, lng: 6.1395 },
+    { lat: 46.2140, lng: 6.1415 },
+    { lat: 46.2085, lng: 6.1400 },
+    { lat: 46.2055, lng: 6.1355 },
+    { lat: 46.2050, lng: 6.1280 },
+    { lat: 46.2068, lng: 6.1225 },
+    { lat: 46.2105, lng: 6.1195 },
+    { lat: 46.2160, lng: 6.1190 },
+    { lat: 46.2210, lng: 6.1205 }
     ],
     points: [
       { lat: 46.2252, lng: 6.1355 }, { lat: 46.2268, lng: 6.1325 },
